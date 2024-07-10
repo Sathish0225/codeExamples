@@ -1,0 +1,69 @@
+@font-face {
+    font-family: digital;
+    src: url("../assets/fonts/digital-7.ttf");
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.calculator {
+    height: 460px;
+    width: 300px;
+    border: 1px black solid;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: digital;
+}
+
+.screen {
+    width: 96%;
+    height: 80px;
+    background-color: #d0e6a8;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 36px;
+}
+
+.keyboard {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 61px);
+    grid-template-rows: repeat(5, 61px);
+    grid-gap: 15px;
+}
+
+.key {
+    padding: 20px;
+    border: 1px solid rgb(222, 221, 221);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-family: inherit;
+    cursor: pointer;
+    background-color: white;
+}
+
+svg {
+    fill: white;
+}
+
+.rest {
+    background-color: rgb(255, 39, 39);
+    color: white;
+}
+
+.equalkey {
+    grid-row: 4 / 6;
+    grid-column: 4 / 5;
+}
