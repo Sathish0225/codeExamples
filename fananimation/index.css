@@ -1,0 +1,43 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.on,
+.off {
+    padding: 10px 20px;
+    color: white;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.on {
+    background-color: rgb(2, 202, 2);
+}
+
+.off {
+    background-color: rgb(202, 2, 2);
+}
+
+.onFan {
+    animation: rotate 0.5s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

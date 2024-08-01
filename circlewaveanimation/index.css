@@ -1,0 +1,67 @@
+body {
+    background: #e4ebf5;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.button {
+    display: block;
+    width: 6rem;
+    height: 6rem;
+    margin: 100px auto;
+    border-radius: 50%;
+    z-index: 300;
+    background: #e4ebf5;
+    box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #fff;
+    cursor: pointer;
+    border: none;
+    position: relative;
+}
+
+.button::before,
+.button::after {
+    content: "";
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    box-shadow: 0.4rem 0.4rem 0.8rem #c8d0e7, -0.4rem -0.4rem 0.8rem #fff;
+    animation: waves 4s linear infinite;
+}
+
+.button:before {
+    background: linear-gradient(to bottom right, #c8d0ef);
+}
+
+.button:after {
+    animation: waves 4s linear 2s infinite;
+}
+
+@keyframes waves {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
